@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+  <script src="{{ url_for('static', filename='js/about.js') }}"></script>
+  </head>
+  <body>
+
+    <div class="main-container">
+<div class="scroll-container">
+<div class="top-panel-bg">
+      <div class="wrapper">
+
+        <div class="create-password-top"></div>
+        <div class="desktop-top"></div>
+        <div class="local-server-top"></div>
+        <div class="donate-top"></div>
+        <div class="about-programm"></div>
+      </div>
+
+</div> 
+      <div class="group">
+        <span class="text">Текст заголовка</span>
+
+
+<img class="inform-image" src="{{ url_for('static', filename='images/about_this.jpg') }}" id="about_img" onClick="toggleText('about')">
+<div class="hidden-text" id="about" style="display: none;">
+    <p>{{page | safe}}</p>
+</div>
+
+<img class="inform-image" src="{{ url_for('static', filename='images/remember.jpg') }}" id="remember_img" onClick="toggleText('remember')">
+<div class="hidden-text" id="remember" style="display: none;">
+    <p>{{learn_pas | safe}}</p>
+</div>
+
+<img class="inform-image" src="{{ url_for('static', filename='images/secure.jpg') }}" id="secure_img" onClick="toggleText('secure')">
+<div class="hidden-text" id="secure" style="display: none;">
+    <p>{{secure | safe}}</p>
+</div>
+
+<img class="inform-image" src="{{ url_for('static', filename='images/how_work.jpg') }}" id="how_work_img" onClick="toggleText('how_work')">
+<div class="hidden-text" id="how_work" style="display: none;">
+    <p>{{how_work | safe}}</p>
+</div>
+
+<img class="inform-image" src="{{ url_for('static', filename='images/fishing.jpg') }}" id="fishing_img" onClick="toggleText('fishing')">
+<div class="hidden-text" id="fishing" style="display: none;">
+    <p>{{fish_def | safe}}</p>
+</div>
+
+<img class="inform-image" src="{{ url_for('static', filename='images/instruction.jpg') }}" id="instruction_img" onClick="toggleText('instruction')">
+<div class="hidden-text" id="instruction" style="display: none;">
+    <p>{{guide | safe}}</p>
+</div>
+
+<img class="inform-image" src="{{ url_for('static', filename='images/new_manager.jpg') }}" id="new_manager_img" onClick="toggleText('new_manager')">
+<div class="hidden-text" id="new_manager" style="display: none;">
+    <p>{{new_gen_man | safe}}.</p>
+</div>
+
+
+
+
+        <div class="img-2"></div>
+
+
+
+
+      </div>
+     
+    </div>
+
+
+
+</div>
+  </body>
+</html>

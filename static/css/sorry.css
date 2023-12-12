@@ -1,0 +1,256 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+:root {
+  --rpx: 100vw / 1920;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 100% высоты видимой области экрана */
+  margin: 0 auto;
+  background: url(../images/sorry/bg_sorry.jpg)
+    no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+}
+.section {
+  position: relative;
+  width: calc(354 * var(--rpx));
+  height: calc(125 * var(--rpx));
+  margin: calc(11 * var(--rpx)) 0 0 calc(12 * var(--rpx));
+  font-size: 0px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 26;
+  overflow: visible auto;
+}
+.text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(40 * var(--rpx));
+  margin: calc(15 * var(--rpx)) 0 0 calc(9 * var(--rpx));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: #000000;
+  font-size: calc(20 * var(--rpx));
+  font-weight: 400;
+  line-height: calc(14.522727012634277 * var(--rpx));
+  text-align: center;
+  z-index: 29;
+}
+.wrapper {
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(50 * var(--rpx));
+  margin: calc(8 * var(--rpx)) 0 0 calc(9 * var(--rpx));
+  background: #d9d9d9;
+  z-index: 28;
+}
+.box {
+  position: relative;
+  width: calc(1302 * var(--rpx));
+  height: calc(745 * var(--rpx));
+  margin: calc(141 * var(--rpx)) 0 0 calc(12 * var(--rpx));
+  z-index: 24;
+}
+.west_group {
+  position: absolute;
+  width: calc(354 * var(--rpx));
+  height: calc(738 * var(--rpx));
+  top: calc(-70 * var(--rpx));
+  left: 0;
+  background: rgba(255, 255, 255, 0.51);
+  z-index: 2;
+}
+.two_k {
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(160 * var(--rpx));
+  margin: calc(40 * var(--rpx)) 0 0 calc(9 * var(--rpx));
+  background: #d9d9d9;
+  z-index: 5;
+}
+.text-2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(50 * var(--rpx));
+  margin: calc(13 * var(--rpx)) 0 0 calc(9 * var(--rpx));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: #000000;
+  font-size: calc(20 * var(--rpx));
+  font-weight: 400;
+  line-height: calc(14.522727012634277 * var(--rpx));
+  text-align: left;
+  z-index: 6;
+}
+.ppz {
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(160 * var(--rpx));
+  margin: calc(17 * var(--rpx)) 0 0 calc(9.0001220703125 * var(--rpx));
+  background: #d9d9d9;
+  z-index: 8;
+}
+.text-3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(50 * var(--rpx));
+  margin: calc(15 * var(--rpx)) 0 0 calc(13 * var(--rpx));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: #000000;
+  font-size: calc(20 * var(--rpx));
+  font-weight: 400;
+  line-height: calc(14.522727012634277 * var(--rpx));
+  text-align: left;
+  z-index: 9;
+}
+.solrid {
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(160 * var(--rpx));
+  margin: calc(15 * var(--rpx)) 0 0 calc(9 * var(--rpx));
+  background: #d9d9d9;
+  z-index: 11;
+}
+.east_group {
+  position: absolute;
+  width: calc(354 * var(--rpx));
+  height: calc(738 * var(--rpx));
+  top: calc(-70 * var(--rpx));
+  left: calc(955 * var(--rpx));
+  background: rgba(255, 255, 255, 0.51);
+  z-index: 14;
+}
+.inistra {
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(160 * var(--rpx));
+  margin: calc(40 * var(--rpx)) 0 0 calc(9 * var(--rpx));
+  background: #d9d9d9;
+  z-index: 17;
+}
+.text-4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(50 * var(--rpx));
+  margin: calc(13 * var(--rpx)) 0 0 calc(9 * var(--rpx));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: #000000;
+  font-size: calc(20 * var(--rpx));
+  font-weight: 400;
+  line-height: calc(14.522727012634277 * var(--rpx));
+  text-align: left;
+  z-index: 18;
+}
+.song {
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(160 * var(--rpx));
+  margin: calc(17 * var(--rpx)) 0 0 calc(9 * var(--rpx));
+  background: #d9d9d9;
+  z-index: 20;
+}
+.text-5 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(50 * var(--rpx));
+  margin: calc(15 * var(--rpx)) 0 0 calc(13 * var(--rpx));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: #000000;
+  font-size: calc(20 * var(--rpx));
+  font-weight: 400;
+  line-height: calc(14.522727012634277 * var(--rpx));
+  text-align: left;
+  z-index: 21;
+}
+.tera {
+  position: relative;
+  width: calc(335 * var(--rpx));
+  height: calc(160 * var(--rpx));
+  margin: calc(15 * var(--rpx)) 0 0 calc(9 * var(--rpx));
+  background: #d9d9d9;
+  z-index: 23;
+}
+.text-6 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: calc(335 * var(--rpx));
+  height: calc(50 * var(--rpx));
+  top: calc(625 * var(--rpx));
+  left: calc(13 * var(--rpx));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: #000000;
+  font-size: calc(20 * var(--rpx));
+  font-weight: 400;
+  line-height: calc(14.522727012634277 * var(--rpx));
+  text-align: left;
+  z-index: 12;
+}
+.text-7 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: calc(335 * var(--rpx));
+  height: calc(50 * var(--rpx));
+  top: calc(625 * var(--rpx));
+  left: calc(961 * var(--rpx));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: #000000;
+  font-size: calc(20 * var(--rpx));
+  font-weight: 400;
+  line-height: calc(14.522727012634277 * var(--rpx));
+  text-align: left;
+  z-index: 24;
+}

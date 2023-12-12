@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/create_form.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      
+      <div class="section">
+        <div class="create-password-top"></div>
+        <div class="desktop-top"></div>
+        <div class="local-server-top"></div>
+        <div class="donate-top"></div>
+        <div class="about-programm"></div>
+      </div>
+      <div class="section-2">
+        <span class="text" style="font-size: 14px; text-align: center;">Идентификатор</span>
+        <div class="group">
+          <input class="input-pole" type="password" placeholder="Идентификатор" id="key">
+          <div class="clear-button" onclick="clearPole('key')"></div>
+          <div class="show-button" id="key_s_b" onclick="showHidePole('key')"></div>
+        </div>
+        <span class="text-2" style="font-size: 14px; text-align: center;">Ключевое слово<br /></span>
+        <div class="section-4">
+          <input class="input-pole" type="password" placeholder="Ключевое слово" id="password">
+          <div class="clear-button" onclick="clearPole('password')"></div>
+          <div class="show-button" id="password_s_b" onclick="showHidePole('password')"></div>
+        </div>
+        <span class="text-3" style="font-size: 14px; text-align: center;">Спец часть<br /></span>
+        <div class="wrapper">
+          <input class="input-pole" type="password" placeholder="Спец часть" id="spec">
+          <div class="clear-button" onclick="clearPole('spec')"></div>
+          <div class="show-button" id="spec_s_b" onclick="showHidePole('spec')"></div>
+        </div>
+        <span class="text-4" style="font-size: 14px; text-align: center;">Длина<br /></span>
+        <div class="group-2">
+          <input class="input-pole" type="password" placeholder="20 сим. по умолчанию" id="len">
+          <div class="clear-button" onclick="clearPole('len')"></div>
+          <div class="show-button" id="len_s_b" onclick="showHidePole('len')"></div>
+        </div>
+        <div class="box-4">
+          <div class="create-button" onclick="forward_trans()"></div>
+          <div class="show-button" id="output-pole_s_b" onclick="showHidePole('output-pole')"></div>
+          <div class="copy-button" onclick="copyTextButton('output-pole')"></div>
+          <div class="clear-button" onclick="clearPoleAll()"></div>
+        </div>
+        <span class="text-5" style="font-size: 14px; text-align: center;">Ваш пароль</span><br>
+        <input class="group-31" type="password" placeholder="" id="output-pole">
+
+      </div>
+      <div class="top-panel-bg"></div>
+    </div>
+<script src="{{ url_for('static', filename='js/password_forward.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>{{title}} - microblog</title>
+  </head>
+  <body>
+      <h1>Hello, {{user.nickname}}!</h1>
+      <h2> How are you {{test}}?</h2>
+      <b>
+
+{% for inf in info %}
+<p> {{inf.name}} : {{inf.info}}</p>
+{% endfor %}
+  </body>
+</html>

@@ -1,0 +1,370 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+:root {
+  --rpx: 100vw / 1920;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 100% высоты видимой области экрана */
+  margin: 0 auto;
+  background: url(../images/background.jpg) no-repeat center;
+  background-size: cover;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: calc(1058 * var(--rpx));
+  height: calc(53 * var(--rpx));
+
+  margin: calc(37 * var(--rpx)) 0 0 calc(431 * var(--rpx));
+  z-index: 37;
+}
+.create-password-top {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(195 * var(--rpx));
+  height: calc(53 * var(--rpx));
+  background: url(../images/create_top.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 33;
+  border-radius: calc(20 * var(--rpx));
+}
+.desktop-top {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(195 * var(--rpx));
+  height: calc(53 * var(--rpx));
+  background: url(../images/desktop_version_top.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 34;
+  border-radius: calc(20 * var(--rpx));
+}
+.local-server-top {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(195 * var(--rpx));
+  height: calc(53 * var(--rpx));
+  background: url(../images/local_server_top.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 35;
+  border-radius: calc(20 * var(--rpx));
+}
+.donate-top {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(195 * var(--rpx));
+  height: calc(53 * var(--rpx));
+  background: url(../images/donate_top.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 36;
+  border-radius: calc(20 * var(--rpx));
+}
+.about-programm {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(195 * var(--rpx));
+  height: calc(53 * var(--rpx));
+  background: url(../images/about_programm_top.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 37;
+  border-radius: calc(20 * var(--rpx));
+}
+.section-2 {
+  position: relative;
+/*
+  width: calc(490 * var(--rpx));
+  height: calc(386 * var(--rpx));
+*/
+width: calc(620 * var(--rpx));
+height: 400;
+  margin: calc(257 * var(--rpx)) 0 0 calc(650 * var(--rpx));# отступ всего центрального окна
+  font-size: 0px;
+  background: rgba(196, 196, 196, 0.63);
+  z-index: 2;
+  overflow: visible auto;
+}
+.text {
+display: inline-block;
+position: relative;
+height: calc(14.3672456741333 * var(--rpx));
+margin: calc(28.7344970703125 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+"Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+"Source Han Sans CN", sans-serif;
+color: rgb(0, 0, 0);
+font-size: calc(12 * var(--rpx));
+font-weight: 400;
+line-height: calc(14.3672456741333 * var(--rpx));
+text-align: center;
+z-index: 8;
+}
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: calc(430 * var(--rpx));
+  height: calc(23.94540786743164 * var(--rpx));
+  margin: calc(9.57816219329834 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  z-index: 7;
+}
+.input-pole {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(200 * var(--rpx));
+  height: calc(23.94540786743164 * var(--rpx));
+  background: rgb(217, 217, 217);
+  z-index: 7;
+  border: none; /* Опционально: чтобы убрать границу поля ввода */
+  padding: 5px; /* Опционально: чтобы добавить отступы вокруг текста */
+}
+
+
+.output-pole {
+  position: relative;
+  width: calc(200 * var(--rpx));
+  height: calc(23.945404052734375 * var(--rpx));
+  margin: calc(9.578155517578125 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  background: rgb(217, 217, 217);
+  z-index: 28;
+  border: none; /* Опционально: чтобы убрать границу поля ввода */
+  padding: 5px; /* Опционально: чтобы добавить отступы вокруг текста */
+}
+
+.group-31 {
+  position: relative;
+  width: calc(200 * var(--rpx));
+  height: calc(23.945404052734375 * var(--rpx));
+  margin: calc(9.578155517578125 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  background: rgb(217, 217, 217);
+  z-index: 28;
+  border: none; /* Опционально: чтобы убрать границу поля ввода */
+  padding: 5px; /* Опционально: чтобы добавить отступы вокруг текста */
+}
+
+.group-32 {
+  position: relative;
+  width: calc(200 * var(--rpx));
+  height: calc(23.945404052734375 * var(--rpx));
+  margin: calc(9.578155517578125 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  background: rgb(217, 217, 217);
+  z-index: 28;
+}
+
+
+
+.clear-button {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(110 * var(--rpx));
+  height: calc(28.94540786743164 * var(--rpx));
+  background: url(../images/clear_button.png)
+    no-repeat center;
+  background-size: cover;
+  border-radius: 15px;
+
+  margin-left: 10px;
+  z-index: 5;
+}
+.show-button {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(110 * var(--rpx));
+  height: calc(28.94540786743164 * var(--rpx));
+  background: url(../images/show_button.png)
+    no-repeat center;
+  background-size: cover;
+  border-radius: 15px;
+  margin: 10px;
+  z-index: 6;
+}
+
+.hide-button {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(110 * var(--rpx));
+  height: calc(28.94540786743164 * var(--rpx));
+  background: url(../images/hide_button.png)
+    no-repeat center;
+  background-size: cover;
+  border-radius: 15px;
+  margin: 10px;
+  z-index: 6;
+}
+
+.text-2 {
+  display: inline-block;
+  position: relative;
+  height: calc(14.367244720458984 * var(--rpx));
+  margin: calc(9.578166961669922 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: calc(12 * var(--rpx));
+  font-weight: 400;
+  line-height: calc(14.367244720458984 * var(--rpx));
+  text-align: center;
+  z-index: 13;
+}
+.section-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: calc(430 * var(--rpx));
+  height: calc(23.945411682128906 * var(--rpx));
+  margin: calc(9.578163146972656 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  z-index: 12;
+}
+
+
+.text-3 {
+  display: inline-block;
+  position: relative;
+  height: calc(14.36724853515625 * var(--rpx));
+  margin: calc(9.578163146972656 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: calc(12 * var(--rpx));
+  font-weight: 400;
+  line-height: calc(14.36724853515625 * var(--rpx));
+  text-align: center;
+  z-index: 18;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: calc(430 * var(--rpx));
+  height: calc(23.945404052734375 * var(--rpx));
+  margin: calc(9.578163146972656 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  z-index: 17;
+}
+
+
+.text-4 {
+  display: inline-block;
+  position: relative;
+  height: calc(14.36724853515625 * var(--rpx));
+  margin: calc(9.578170776367188 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: calc(12 * var(--rpx));
+  font-weight: 400;
+  line-height: calc(14.36724853515625 * var(--rpx));
+  text-align: center;
+  z-index: 23;
+}
+.group-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: calc(430 * var(--rpx));
+  height: calc(23.945404052734375 * var(--rpx));
+  margin: calc(9.578155517578125 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  z-index: 22;
+}
+.box-3 {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(200 * var(--rpx));
+  height: calc(23.945404052734375 * var(--rpx));
+  background: rgb(217, 217, 217);
+  z-index: 22;
+}
+
+.box-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: calc(310 * var(--rpx));
+  height: calc(23.945404052734375 * var(--rpx));
+  margin: calc(21.071975708007812 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  z-index: 27;
+}
+.create-button {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(110 * var(--rpx));
+  height: calc(28.94540786743164 * var(--rpx));
+  background: url(../images/create_button.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 25;
+  border-radius: 15px;
+}
+
+.copy-button {
+  flex-shrink: 0;
+  position: relative;
+  width: calc(110 * var(--rpx));
+  height: calc(28.94540786743164 * var(--rpx));
+  background: url(../images/copy_button.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 27;
+  border-radius: 15px;
+}
+.text-5 {
+  display: inline-block;
+  position: relative;
+  height: calc(14.367233276367188 * var(--rpx));
+  margin: calc(9.578155517578125 * var(--rpx)) 0 0 calc(30 * var(--rpx));
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: calc(12 * var(--rpx));
+  font-weight: 400;
+  line-height: calc(14.367233276367188 * var(--rpx));
+  text-align: center;
+  z-index: 29;
+}
+
+.top-panel-bg {
+  position: absolute;
+  width: calc(1920 * var(--rpx));
+  height: calc(127 * var(--rpx));
+  top: 0;
+  left: 0;
+  background: url(../images/top_panel.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 31;
+}

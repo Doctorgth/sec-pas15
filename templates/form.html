@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Форма</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+  </head>
+  <body>
+    <form method="POST">
+      <label for="test">key</label><br>
+      <input type="password" id="key" name="key" />
+      <img src="{{ url_for('static', filename='images/clear_on.png') }}" alt="Очистить" onclick="clearPole('key')">
+      <img src="{{ url_for('static', filename='images/show_on.png') }}" alt="Очистить" onclick="showHidePole('key')" id='key_img'><br>
+      {#<button type="button" onclick="clearPole('key')">Очистить</button>#}
+
+      {#<button type="button" onclick="showHidePole('key')">Показать/Скрыть</button><br>#}
+
+
+      <label for="base_w">base_w</label><br>
+      <input type="password" id="base_w" name="base_w" />
+      <img src="{{ url_for('static', filename='images/clear_on.png') }}" alt="Очистить" onclick="clearPole('base_w')">
+      <img src="{{ url_for('static', filename='images/show_on.png') }}" alt="Очистить" onclick="showHidePole('base_w')" id='base_w_img'><br>
+
+
+      <label for="place_w">place_w</label><br>
+      <input type="password" id="place_w" name="place_w" />
+      <img src="{{ url_for('static', filename='images/clear_on.png') }}" alt="Очистить" onclick="clearPole('place_w')">
+      <img src="{{ url_for('static', filename='images/show_on.png') }}" alt="Очистить" onclick="showHidePole('place_w')" id='place_w_img'><br>
+
+
+      <label for="len">len (default=20)</label><br>
+      <input type="text" id="len" name="len" />
+      <img src="{{ url_for('static', filename='images/clear_on.png') }}" alt="Очистить" onclick="clearPole('len')"><br>
+
+      <input type="submit" value="Отправить" />
+    </form>
+
+<input type="password" id="password-input" name="password" placeholder="Ваш пароль" readonly value={{info}}>
+
+
+      <img src="{{ url_for('static', filename='images/copy_on.png') }}" alt="Очистить" onclick="copyPassword()">
+<img src="{{ url_for('static', filename='images/show_on.png') }}" alt="Очистить" onclick="showHidePole('password-input')" id='password-input_img'>
+<button type="button" onclick="forward_trans()">Тест</button>
+
+<script src="{{ url_for('static', filename='js/password.js') }}"></script>
+  </body>
+</html>

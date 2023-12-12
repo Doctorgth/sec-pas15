@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sorry.css') }}">
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="section">
+        <span class="text">Ваш никнейм</span>
+        <input class="wrapper" type="text" placeholder="Никнейм" id="spec">
+      </div>
+      <div class="box">
+        <div class="west_group">
+          <img class="two_k" src="{{two_k.img}}" id="{{two_k.location}}_img" onClick="useApi('{{two_k.location}}')">
+          <span class="text-2" id="{{two_k.location}}">{{two_k.name}}</span>
+          <img class="ppz" src="{{ppz.img}}" id="{{ppz.location}}_img" onClick="useApi('{{ppz.location}}')">
+          <span class="text-3" id="{{ppz.location}}">{{ppz.name}}</span>
+          <img class="solrid" src="{{solrid.img}}" id="{{solrid.location}}_img" onClick="useApi('{{solrid.location}}')">
+        </div>
+        <div class="east_group">
+          <img class="inistra" src="{{inistra.img}}" id="{{inistra.location}}_img" onClick="useApi('{{inistra.location}}')">
+          <span class="text-4" id="{{inistra.location}}">{{inistra.name}}</span>
+          <img class="song" src="{{song.img}}" id="{{song.location}}_img" onClick="useApi('{{song.location}}')">
+          <span class="text-5" id="{{song.location}}">{{song.name}}</span>
+          <img class="tera" src="{{tera.img}}" id="{{tera.location}}_img" onClick="useApi('{{tera.location}}')">
+        </div>
+        <span class="text-6" id="{{solrid.location}}">{{solrid.name}}</span><span class="text-7" id="{{tera.location}}">{{tera.name}}</span>
+      </div>
+    </div>
+<script src="{{ url_for('static', filename='js/api_sorry.js') }}"></script>
+  </body>
+</html>
